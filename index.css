@@ -7,16 +7,16 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
-}
-
-.main-header {
-    background-color: #fff;
-    padding: 0.25rem 0;
+    font-family: "EB Garamond",serif;
 }
 
 .main-header__logo-img {
     height: 40px;
     width: auto;
+}
+
+.main-header__navbar{
+    display: none;
 }
 
 .main-header__btn-subscribe {
@@ -49,7 +49,19 @@ body{
         margin-right: auto;
     }
 
-    .main-header__logo-img {
-        display: none;
+    .main-header__navbar{
+        display: flex;
+    }
+
+    .main-header__navbar .navbar-nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.75rem;
+    }
+
+    .main-header__nav-item{
+        font-size: 0.75rem;
+        line-height: 1;
+
     }
 }
