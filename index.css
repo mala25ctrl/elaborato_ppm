@@ -1,0 +1,55 @@
+:root{
+    --fq-red: #a83946;
+    --fq-dark: #212529;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    background-color: #fff;
+    padding: 0.25rem 0;
+}
+
+.main-header__logo-img {
+    height: 40px;
+    width: auto;
+}
+
+.main-header__btn-subscribe {
+    background-color: var(--fq-red);
+    border: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 0.45rem;
+    border-radius: 2px;
+    font-family: "TT Norms",sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.main-header__user-icon{
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+
+/* --- TABLET (md) --- */
+@media (min-width: 768px) {
+    header{
+        width: 100%;
+        max-width: 67.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-header__logo-img {
+        display: none;
+    }
+}
