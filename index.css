@@ -4,10 +4,15 @@
 }
 
 body {
-    margin: 0;
     display: flex;
     flex-direction: column;
+    margin: 0;
     font-family: "EB Garamond", serif;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 .main-header__logo-img {
@@ -21,6 +26,7 @@ body {
 
 .main-header__btn-subscribe {
     background-color: var(--fq-red);
+    color: white;
     border: none;
     font-weight: 400;
     letter-spacing: 1px;
@@ -29,6 +35,10 @@ body {
     font-family: "TT Norms", sans-serif;
     font-size: 0.875rem;
     text-transform: uppercase;
+}
+
+.main-header__span-accedi{
+    display: none;
 }
 
 .main-header__user-icon {
@@ -70,10 +80,89 @@ body {
     color: #5c5c5c;
 }
 
+.main-header__btn-login{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #262424;
+    text-transform: uppercase;
+    font-family: "TT Norms", sans-serif;
+    font-size: 0.875rem;
+}
+
+.main-footer{
+    flex-shrink: 0;
+    background-color: #000;
+    z-index: 1;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.main-footer__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #7f8589;
+}
+
+.main-footer__nav{
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 1px solid #7f8589;
+}
+
+.main-footer__nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0;
+    list-style: none;
+}
+
+.main-footer__nav-list-item{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.75rem;
+    font-family: "TT Norms", sans-serif;
+    line-height: 1rem;
+}
+
+.main-footer__social{
+    justify-content: center;
+    border-bottom: 1px solid #7f8589;
+}
+
+.main-footer__social-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 1rem;
+}
+
+.main-footer__copyright{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.75rem;
+    font-family: "TT Norms", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1rem;
+}
+
 
 /* --- TABLET (md) --- */
 @media (min-width: 768px) {
-    header {
+    body {
         width: 100%;
         max-width: 67.5rem;
         padding-left: 1.25rem;
@@ -95,6 +184,9 @@ body {
     .main-header__primary-item {
         font-size: 0.75rem;
         line-height: 1;
+    }
 
+    .main-header__span-accedi{
+        display: block;
     }
 }
