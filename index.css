@@ -1,13 +1,13 @@
-:root{
+:root {
     --fq-red: #a83946;
     --fq-dark: #212529;
 }
 
-body{
+body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: "EB Garamond",serif;
+    font-family: "EB Garamond", serif;
 }
 
 .main-header__logo-img {
@@ -15,7 +15,7 @@ body{
     width: auto;
 }
 
-.main-header__navbar{
+.main-header__navbar {
     display: none;
 }
 
@@ -26,21 +26,54 @@ body{
     letter-spacing: 1px;
     padding: 0.45rem;
     border-radius: 2px;
-    font-family: "TT Norms",sans-serif;
+    font-family: "TT Norms", sans-serif;
     font-size: 0.875rem;
     text-transform: uppercase;
 }
 
-.main-header__user-icon{
+.main-header__user-icon {
     width: 24px;
     height: 24px;
     display: block;
 }
 
+.main-header__topics{
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid #7f8589;
+    border-top: 1px solid #7f8589;
+    background-color: #f6f8fa;
+}
+
+.main-header__topics-list {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    -ms-overflow-style: none; /* IE e Edge */
+    scrollbar-width: none; /* Firefox */
+    padding: 1rem;
+    gap: 0.75rem;
+}
+
+.main-header__topics-list::-webkit-scrollbar {
+    display: none; /* Nasconde la barra su Chrome, Safari e Opera */
+}
+
+.main-header__topics-item .nav-link{
+    white-space: nowrap;
+    padding: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: "TT Norms", sans-serif;
+    color: #5c5c5c;
+}
+
 
 /* --- TABLET (md) --- */
 @media (min-width: 768px) {
-    header{
+    header {
         width: 100%;
         max-width: 67.5rem;
         padding-left: 1.25rem;
@@ -49,17 +82,17 @@ body{
         margin-right: auto;
     }
 
-    .main-header__navbar{
+    .main-header__navbar {
         display: flex;
     }
 
-    .main-header__navbar .navbar-nav {
+    .main-header__primary-list {
         flex-direction: row;
         flex-wrap: nowrap;
         gap: 0.75rem;
     }
 
-    .main-header__nav-item{
+    .main-header__primary-item {
         font-size: 0.75rem;
         line-height: 1;
 
