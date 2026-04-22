@@ -189,4 +189,43 @@ main {
     .main-header__span-accedi{
         display: block;
     }
+
+    .main-footer__nav{
+        justify-content: center;
+    }
+
+    .main-footer__nav-list {
+        flex-direction: row;
+    }
+
+    .main-header__subscription-title{
+        font-weight: 500;
+        font-size: 1.375rem;
+        font-family: "EB Garamond", serif;
+        color: #262424;
+        line-height: 1;
+        font-optical-sizing: auto;
+    }
+
+    .main-header__subscription-subtitle{
+        font-weight: 400;
+        font-size: 0.75rem;
+        font-family: "TT Norms", sans-serif;
+        color: #5c5c5c;
+        line-height: 1;
+    }
+
+    .main-header__info{
+        border-top: 1px solid #7f8589;
+    }
+
+    .main-header__info-txt{
+        font-weight: 400;
+        font-size: 0.75rem;
+        font-family: "TT Norms", sans-serif;
+        color: #5c5c5c;
+        line-height: 1rem;
+    }
+
+
 }
