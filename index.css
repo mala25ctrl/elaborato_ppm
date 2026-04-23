@@ -1,6 +1,12 @@
 :root {
     --fq-red: #a83946;
     --fq-dark: #212529;
+    --container-width: 67.5rem;
+    --container-padding: 1.25rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 body {
@@ -37,7 +43,7 @@ main {
     text-transform: uppercase;
 }
 
-.main-header__span-accedi{
+.main-header__span-accedi {
     display: none;
 }
 
@@ -47,7 +53,7 @@ main {
     display: block;
 }
 
-.main-header__topics{
+.main-header__topics {
     display: flex;
     gap: 1rem;
     border-bottom: 1px solid #7f8589;
@@ -70,7 +76,7 @@ main {
     display: none; /* Nasconde la barra su Chrome, Safari e Opera */
 }
 
-.main-header__topics-item .nav-link{
+.main-header__topics-item .nav-link {
     white-space: nowrap;
     padding: 0;
     font-weight: 400;
@@ -80,7 +86,7 @@ main {
     color: #5c5c5c;
 }
 
-.main-header__btn-login{
+.main-header__btn-login {
     display: flex;
     gap: 0.5rem;
     align-items: center;
@@ -92,7 +98,7 @@ main {
     font-size: 0.875rem;
 }
 
-.main-footer{
+.main-footer {
     flex-shrink: 0;
     background-color: #000;
     z-index: 1;
@@ -100,7 +106,7 @@ main {
     padding-right: 1.25rem;
 }
 
-.main-footer__logo{
+.main-footer__logo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,13 +115,13 @@ main {
     border-bottom: 1px solid #7f8589;
 }
 
-.main-footer__nav{
+.main-footer__nav {
     display: flex;
     justify-content: flex-start;
     border-bottom: 1px solid #7f8589;
 }
 
-.main-footer__nav-list{
+.main-footer__nav-list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -125,7 +131,7 @@ main {
     list-style: none;
 }
 
-.main-footer__nav-list-item{
+.main-footer__nav-list-item {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 0.75rem;
@@ -133,12 +139,12 @@ main {
     line-height: 1rem;
 }
 
-.main-footer__social{
+.main-footer__social {
     justify-content: center;
     border-bottom: 1px solid #7f8589;
 }
 
-.main-footer__social-list{
+.main-footer__social-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -148,7 +154,7 @@ main {
     padding: 1rem;
 }
 
-.main-footer__copyright{
+.main-footer__copyright {
     display: flex;
     justify-content: center;
     color: #fff;
@@ -162,13 +168,13 @@ main {
 
 /* --- TABLET (md) --- */
 @media (min-width: 768px) {
-    body {
+    .main-header,
+    .main-content,
+    .main-footer {
+        max-width: var(--container-width);
+        padding-inline: var(--container-padding);
+        margin-inline: auto;
         width: 100%;
-        max-width: 67.5rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .main-header__navbar {
@@ -186,11 +192,11 @@ main {
         line-height: 1;
     }
 
-    .main-header__span-accedi{
+    .main-header__span-accedi {
         display: block;
     }
 
-    .main-footer__nav{
+    .main-footer__nav {
         justify-content: center;
     }
 
@@ -198,7 +204,7 @@ main {
         flex-direction: row;
     }
 
-    .main-header__subscription-title{
+    .main-header__subscription-title {
         font-weight: 500;
         font-size: 1.375rem;
         font-family: "EB Garamond", serif;
@@ -207,7 +213,7 @@ main {
         font-optical-sizing: auto;
     }
 
-    .main-header__subscription-subtitle{
+    .main-header__subscription-subtitle {
         font-weight: 400;
         font-size: 0.75rem;
         font-family: "TT Norms", sans-serif;
@@ -215,11 +221,11 @@ main {
         line-height: 1;
     }
 
-    .main-header__info{
+    .main-header__info {
         border-top: 1px solid #7f8589;
     }
 
-    .main-header__info-txt{
+    .main-header__info-txt {
         font-weight: 400;
         font-size: 0.75rem;
         font-family: "TT Norms", sans-serif;
