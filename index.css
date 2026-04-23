@@ -98,6 +98,27 @@ main {
     font-size: 0.875rem;
 }
 
+.main-content{
+    margin-top: 16px;
+    padding: 16px 15px;
+}
+
+.section-categories {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #7f8589;
+    padding-bottom: 0.25rem;
+}
+
+.section-categories h2{
+    font-family: "TT Norms", sans-serif;
+    color: #262424;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
 .main-footer {
     flex-shrink: 0;
     background-color: #000;
