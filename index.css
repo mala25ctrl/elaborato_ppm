@@ -116,6 +116,8 @@ main {
     flex-direction: column;
     border-top: 2px solid var(--fq-border);
     padding-bottom: 0.25rem;
+    margin-bottom: 2.5rem;
+    padding-top: 1rem;
 }
 
 .section-categories__header{
@@ -176,6 +178,19 @@ main {
     align-items: center;
     gap: 0.5rem;
     flex-shrink: 0;
+}
+
+.article__actions i{
+    color: var(--fq-text);
+    font-size: 0.9rem;
+}
+
+.article__actions a {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    text-decoration: none;
+    color: var(--fq-text);
 }
 
 .article__actions-divider{
