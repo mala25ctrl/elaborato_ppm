@@ -7,8 +7,8 @@
     --fq-border: #7f8589;
     --fq-light-border: #e5ebef;
     --fq-bg-light: #f6f8fa;
-    --font-serif: "EB Garamond", serif;
-    --font-sans: "TT Norms", sans-serif;
+    --font-serif: serif;
+    --font-sans: sans-serif;
     --container-width: 67.5rem;
     --container-padding: 1.25rem;
 }
@@ -419,6 +419,26 @@ main {
         padding-inline: var(--container-padding);
         margin-inline: auto;
         width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        .main-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: white;
+        }
+    }
+
+    .main-header__info {
+        overflow: hidden;
+        max-height: 200px; /* abbastanza grande per contenuto */
+        transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    }
+
+    .main-header__info--hidden {
+        max-height: 0;
+        opacity: 0;
     }
 
     .main-header__navbar {
