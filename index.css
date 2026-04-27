@@ -411,9 +411,9 @@ main {
 .video-section__content {
     display: flex;
     gap: 1rem;
+    width: 100%;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    padding-left: 15px;
     padding-bottom: 0.75rem;
 }
 
@@ -427,12 +427,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    min-width: 0;
-}
-
-.video-section__content::after {
-    content: "";
-    flex: 0 0 15px;
 }
 
 .video-card__thumb {
@@ -442,9 +436,9 @@ main {
 }
 
 .video-card__thumb img {
-    display: block;
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
 }
 
 .video-card__play {
@@ -481,6 +475,7 @@ main {
 }
 
 .video-card__caption {
+    display: block;
     font-size: 1.375rem;
     font-weight: 500;
     line-height: 1.3;
