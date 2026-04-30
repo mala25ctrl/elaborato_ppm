@@ -525,6 +525,28 @@ main {
     display: none;
 }
 
+.section-banner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.section-banner__label {
+    font-family: var(--font-sans), sans-serif;
+    font-size: 0.75rem;
+    color: var(--fq-muted);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.section-banner__image {
+    width: 100%;
+    max-width: 970px;
+    height: auto;
+}
+
 
 /* --- TABLET (md) --- */
 @media (min-width: 768px) {
