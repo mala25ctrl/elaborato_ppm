@@ -244,8 +244,12 @@ main {
     color: var(--fq-text);
 }
 
-.article__content__link span {
+.article__content__link--cta {
     color: var(--fq-red);
+    font-weight: 700;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: underline;
 }
 
 .news__category {
