@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!headerInfoElement) return;
 
     let lastScrollPosition = window.scrollY;
-    const scrollThreshold = 50;
+    const scrollThreshold = 100;
 
     const toggleHeaderInfoOnScroll = () => {
         if (window.innerWidth < 768) {
