@@ -408,7 +408,7 @@ main {
     gap: 1rem;
 }
 
-.video-section__content {
+.meta-section__content {
     display: flex;
     gap: 1rem;
     width: 100%;
@@ -417,11 +417,11 @@ main {
     padding-bottom: 0.75rem;
 }
 
-.video-section__content::-webkit-scrollbar {
+.meta-section__content::-webkit-scrollbar {
     display: none;
 }
 
-.video-card {
+.meta-card {
     flex: 0 0 85%;
     scroll-snap-align: start;
     display: flex;
@@ -429,13 +429,13 @@ main {
     gap: 0.5rem;
 }
 
-.video-card__thumb {
+.meta-card__thumb {
     position: relative;
     display: block;
     overflow: hidden;
 }
 
-.video-card__thumb img {
+.meta-card__thumb img {
     width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;
@@ -460,7 +460,7 @@ main {
     font-size: 1.5rem;
 }
 
-.video-card__title {
+.meta-card__title {
     margin: 0;
     font-family: var(--font-sans), sans-serif;
     font-size: 0.75rem;
@@ -469,12 +469,12 @@ main {
     color: var(--fq-muted);
 }
 
-.video-card__title a {
+.meta-card__title a {
     color: inherit;
     text-decoration: none;
 }
 
-.video-card__caption {
+.meta-card__caption {
     display: block;
     font-size: 1.375rem;
     font-weight: 500;
@@ -483,14 +483,14 @@ main {
     text-decoration: none;
 }
 
-.video-section__controls {
+.meta-section__controls {
     display: flex;
     justify-content: flex-end;
     gap: 0.5rem;
     margin-bottom: 0.75rem;
 }
 
-.video-section__btn {
+.meta-section__btn {
     width: 48px;
     height: 48px;
     border: 1px solid var(--fq-muted);
@@ -503,9 +503,26 @@ main {
     cursor: pointer;
 }
 
-.video-section__btn:disabled {
+.meta-section__btn:disabled {
     opacity: 0.35;
     cursor: not-allowed;
+}
+
+/* Articoli in lista verticale su mobile */
+.meta-section--articles .meta-section__content {
+    flex-direction: column;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    padding-bottom: 0;
+}
+
+.meta-section--articles .meta-card {
+    flex: none;
+    width: 100%;
+}
+
+.meta-section--articles .meta-section__controls {
+    display: none;
 }
 
 
@@ -632,7 +649,7 @@ main {
         padding-left: 1rem;
     }
 
-    .video-section__content {
+    .meta-section__content {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 1rem;
@@ -641,15 +658,15 @@ main {
         padding-bottom: 0;
     }
 
-    .video-section__content::after {
+    .meta-section__content::after {
         display: none;
     }
 
-    .video-card {
+    .meta-card {
         flex: initial;
     }
 
-    .video-section__controls {
+    .meta-section__controls {
         display: none;
     }
 
