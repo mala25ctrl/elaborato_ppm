@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (isScrollingDown && hasScrolledEnough) {
             headerInfoElement.classList.add('main-header__info--hidden');
-            headerInfoElement.classList.remove('px-2', 'py-3');
+            headerInfoElement.classList.remove('px-2', 'py-2');
         } else {
             headerInfoElement.classList.remove('main-header__info--hidden');
-            headerInfoElement.classList.add('px-2', 'py-3');
+            headerInfoElement.classList.add('px-2', 'py-2');
         }
 
         lastScrollPosition = currentScrollPosition;
